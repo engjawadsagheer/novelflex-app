@@ -1,0 +1,104 @@
+// import 'package:flutter/material.dart';
+// import 'package:flutter_pay/flutter_pay.dart';
+//
+// class FlutterPayment extends StatefulWidget {
+//   const FlutterPayment({Key? key}) : super(key: key);
+//
+//   @override
+//   State<FlutterPayment> createState() => _FlutterPaymentState();
+// }
+//
+// class _FlutterPaymentState extends State<FlutterPayment> {
+//   FlutterPay flutterPay = FlutterPay();
+//
+//   String result = "Result will be shown here";
+//
+//   @override
+//   void initState() {
+//     super.initState();
+//   }
+//
+//   void makePayment() async {
+//     List<PaymentItem> items = [
+//       PaymentItem(name: "T-Shirt", price: 2.98)
+//     ];
+//
+//     flutterPay.setEnvironment(environment: PaymentEnvironment.Test);
+//
+//     flutterPay.requestPayment(
+//       googleParameters: GoogleParameters(
+//         gatewayName: "example",
+//         gatewayMerchantId: "example_id",
+//       ),
+//       appleParameters:
+//       AppleParameters(merchantIdentifier: "merchant.flutterpay.example"),
+//       currencyCode: "USD",
+//       countryCode: "US",
+//       paymentItems: items,
+//     );
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return  Scaffold(
+//         appBar: AppBar(
+//           title: const Text('Plugin example app'),
+//         ),
+//         body: Container(
+//           padding: EdgeInsets.all(12.0),
+//           child: Column(
+//               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//               children: [
+//                 Text(
+//                   this.result,
+//                   style: TextStyle(
+//                     fontSize: 16.0,
+//                   ),
+//                 ),
+//                 ElevatedButton(
+//                   child: Text("Can make payments?"),
+//                   onPressed: () async {
+//                     try {
+//                       bool result = await flutterPay.canMakePayments();
+//                       setState(() {
+//                         this.result = "Can make payments: $result";
+//                       });
+//                     } catch (e) {
+//                       setState(() {
+//                         this.result = "$e";
+//                       });
+//                     }
+//                   },
+//                 ),
+//                 ElevatedButton(
+//                   child: Text("Can make payments with verified card: $result"),
+//                   onPressed: () async {
+//                     try {
+//                       bool result =
+//                       await flutterPay.canMakePaymentsWithActiveCard(
+//                         allowedPaymentNetworks: [
+//                           PaymentNetwork.visa,
+//                           PaymentNetwork.masterCard,
+//                         ],
+//                       );
+//                       setState(() {
+//                         this.result = "$result";
+//                       });
+//                     } catch (e) {
+//                       setState(() {
+//                         this.result = "Error: $e";
+//                       });
+//                     }
+//                   },
+//                 ),
+//                 ElevatedButton(
+//                     child: Text("Try to pay?"),
+//                     onPressed: () {
+//                       makePayment();
+//                     })
+//               ]),
+//         ),
+//
+//     );
+//   }
+// }

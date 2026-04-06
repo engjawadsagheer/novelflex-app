@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>362340188692-sks0s537a6k98j6fuvqgfm4rpcqtuf4n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.362340188692-sks0s537a6k98j6fuvqgfm4rpcqtuf4n</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>362340188692-uv30tn9hrb5g0gccv7q4gi85vn2m6gei.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBq1of6mLOb48PM-3TLL2YCffSvGp56Wt8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>362340188692</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.appcom.estisharati.novel.flex.novelflex</string>
+	<key>PROJECT_ID</key>
+	<string>agora-c2f75</string>
+	<key>STORAGE_BUCKET</key>
+	<string>agora-c2f75.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:362340188692:ios:20cc282e91a9896ff41d01</string>
+</dict>
+</plist>
